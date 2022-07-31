@@ -1,2 +1,2 @@
-from mynameissaichon import Saichon
-# from mynameissaichon import *
+from mynameissaichon.mynameissaichon import SaiChon
+# from mynameissaichon.mynameissaichon import *
