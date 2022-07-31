@@ -1,4 +1,7 @@
-class Saichon:
+import random
+
+class SaiChon:
+
     """
     Class Saichon คือ
     ข้อมูลที่เกี่ยวกับ สายชล
@@ -29,7 +32,7 @@ class Saichon:
         Art by David Palmer
                                                .--.
                                                `.  \\
-                                                 \  \\
+                                                \\  \\
                                                   .  \\
                                                   :   .
                                                   |    .
@@ -37,28 +40,35 @@ class Saichon:
                                                   |    |
   ..._  ___                                       |    |
  `."".`''''""--..___                              |    |
- ,-\  \             ""-...__         _____________/    |
+ ,-\\  \\           ""-...__         _____________/    |
  / ` " '                    `""''''''                   .
- \                                                      L
+ \\                                                     L
  (>                                                      \\
 /                                                         \\
-\_    ___..---.                                            L
+\\    ___..---.                                            L
   `--'         '.                                           \\
-                 .                                           \_
+                 .                                          \\_
                 _/`.                                           `.._
              .'     -.                                             `.
             /     __.-Y     /''''''-...___,...--------.._            |
-           /   _."    |    /                ' .      \   '---..._    |
+           /   _."    |    /                ' .     \\   '---..._    |
           /   /      /    /                _,. '    ,/           |   |
-          \_,'     _.'   /              /''     _,-'            _|   |
+          \\,'     _.'   /              /''     _,-'            _|   |
                   '     /               `-----''               /     |
                   `...-'                                       `...-'
         """
         print(text)
 
+    def dice(self):
+        dice_list = ['⚀','⚁','⚂','⚃','⚄','⚅']
+        first = random.choice(dice_list)
+        second = random.choice(dice_list)
+        print(f'คุณทอยเต๋าได้ {first}{second}')
+
 if __name__ == '__main__':
-    chon = Saichon()
+    chon = SaiChon()
     chon.show_name()
     chon.show_youtube()
     chon.about()
     chon.show_atr()
+    chon.dice()
